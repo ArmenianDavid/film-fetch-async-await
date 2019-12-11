@@ -1,0 +1,127 @@
+body{
+  margin: 0;
+  min-width: 320px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  background-image: url('https://www.elsetge.cat/myimg/f/157-1576981_cool-wallpaper-wallpaper-backgrounds-background-images-shelter-anime.jpg');
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 3px 3px white;
+}
+h2{
+  font-size: 2rem;
+  text-align: center;
+}
+p{
+  font-size: 1rem;
+}
+span{
+  color: gold;
+}
+.big-text-span{
+  font-size: 1.2em;
+}
+button{
+  font-size: 1.5rem;
+  background-color: lightblue;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Container Whole */
+.whole-container{
+  width: 90%;
+  margin: 1em auto;
+}
+#films{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* END */
+
+/* CARD DECORATION */
+.film-card{
+  width: 30%;
+  margin: 1em auto;
+  padding: 0.5em;
+  background: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 0px slategrey;
+}
+/* END */
+
+/* Main */
+.comingFromLeft{
+  display: block;
+  position: relative;
+}
+
+
+/* Buttons */
+.centerBtn{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+/* END */
+
+
+/* Media for Fonts */
+@media only screen and (max-width:600px){
+  html{
+    font-size: 14px;
+  }
+  .film-card{
+    width: 45%;
+  }
+}
+@media only screen and (max-width:500px){
+  html{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width:400px){
+  html{
+    font-size: 12px;
+  }
+  .film-card{
+    width: 80%;
+  }
+}
+@media only screen and (max-width:350px){
+  html{
+    font-size: 10px;
+  }
+}
+/* END */
+
+
+/* ANIMATION */
+
+.comingFromLeft{
+  animation: comingFromLeft 1s normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+@keyframes comingFromLeft{
+  0%{left: -500px; transform: rotate(-360deg);}
+  100%{left: 0px; transform: rotate(-90deg);}
+}
+
+.dropeDown{
+  animation: dropeDown 2s normal;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+@keyframes dropeDown{
+  0%{left: 0px; top: 0px; transform: rotate(0deg);}
+  100%{left: 0px; top: 0px; transform: rotate(90deg);}
+}
